@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        body{
+            font-family: Arial;
+            margin: 0;
+            margin: 20px;
+            width: 60%; 
+            justify-content: center;
+
+        }
+        .container{
+            display: grid;
+            grid-template-columns: repeat(auto-fill,250px); 
+            justify-content: center;
+            column-gap: 50px;
+            row-gap: 10px;
+        }
+        .ima ,.ima2{
+            border-radius: 10px;
+        }
+        .item{
+            background: silver;
+            border-radius: 10px;
+        }
+        .ima{
+            max-width: 100%;
+        }
+
+        .largo{
+            grid-row-end: span 3;
+        }
+        .camisa{
+            grid-row-end: span 2;
+        }
+        .cuadra{
+            grid-row-end: span 1;
+        }
+
+        }
+    </style>
+</head>
+<body>
+    <section class="container">
+        <div class="item largo"><img class="ima" src="large.jpg" alt=""></div>
+        <div class="item camisa"><img class="ima" src="camisa.jpg" alt="" ></div>
+        <div class="item cuadra"><img class="ima" src="cuadrada.jpg" alt="" ></div>
+        <div class="item largo"><img class="ima" src="large.jpg" alt=""></div>
+        <div class="item camisa"><img class="ima" src="camisa.jpg" alt="" ></div>
+        <div class="item cuadra"><img class="ima" src="cuadrada.jpg" alt="" ></div>
+        <div class="item largo"><img class="ima" src="large.jpg" alt=""></div>
+        <div class="item camisa"><img class="ima" src="camisa.jpg" alt="" ></div>
+        <div class="item cuadra"><img class="ima" src="cuadrada.jpg" alt="" ></div>
+        <div class="item largo"><img class="ima" src="large.jpg" alt=""></div>
+        <div class="item camisa"><img class="ima" src="camisa.jpg" alt="" ></div>
+        <div class="item cuadra"><img class="ima" src="cuadrada.jpg" alt="" ></div>
+        <div class="item largo"><img class="ima" src="large.jpg" alt=""></div>
+        <div class="item camisa"><img class="ima" src="camisa.jpg" alt="" ></div>
+        <div class="item cuadra"><img class="ima" src="cuadrada.jpg" alt="" ></div>
+
+    
+    </section>
+    
+</body>
+</html>
